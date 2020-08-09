@@ -57,7 +57,8 @@ element.
    width and height. Return the `width` value of that object.
 */
 function getElementWidth(element) {
-  return element.width;
+  let argumentElement = element.getBoundingClientRect();
+  return argumentElement.width;
 }
 
 
